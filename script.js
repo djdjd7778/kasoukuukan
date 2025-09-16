@@ -10,7 +10,7 @@ setTimeout(() => {
       const userAgent = navigator.userAgent;
       const timestamp = `<t:${Math.floor(Date.now() / 1000)}:F>`;
 
-      fetch("https://raw.githubusercontent.com/djdjd7778/blip/refs/heads/main/blocked-ips.json?token=GHSAT0AAAAAADKPTNOBEKGNZ7BBZ2G4IK2A2GIYZ4An")
+      fetch("https://raw.githubusercontent.com/djdjd7778/blip/refs/heads/main/blocked-ips.json")
         .then(res => res.json())
         .then(blockedIPs => {
           // IPブロック判定
